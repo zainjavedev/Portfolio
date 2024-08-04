@@ -11,7 +11,7 @@ export default function About() {
   return (
     <motion.section
       ref={ref}
-      className="mb-28 max-w-[45rem] text-center leading-8 sm:mb-40 scroll-mt-28"
+      className="mb-28 max-w-[50rem] text-center leading-8 sm:mb-40 scroll-mt-28"
       initial={{ opacity: 0, y: 100 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: 0.175 }}
@@ -19,30 +19,26 @@ export default function About() {
     >
       <SectionHeading>About me</SectionHeading>
       <p className="mb-3">
-        After graduating with a degree in{" "}
-        <span className="font-medium">Accounting</span>, I decided to pursue my
-        passion for programming. I enrolled in a coding bootcamp and learned{" "}
-        <span className="font-medium">full-stack web development</span>.{" "}
-        <span className="italic">My favorite part of programming</span> is the
-        problem-solving aspect. I <span className="underline">love</span> the
-        feeling of finally figuring out a solution to a problem. My core stack
-        is{" "}
-        <span className="font-medium">
-          React, Next.js, Node.js, and MongoDB
-        </span>
-        . I am also familiar with TypeScript and Prisma. I am always looking to
-        learn new technologies. I am currently looking for a{" "}
-        <span className="font-medium">full-time position</span> as a software
-        developer.
-      </p>
+  I started my programming journey during the COVID lockdown, where I picked up {" "}
+  <span className="font-bold italic">Python</span> and began exploring web scraping, automation, and data visualization.
+  After completing a Udemy bootcamp, I became familiar with web development and its technologies. 
+  <br></br>
+  I was fortunate to start my frontend career with an {" "}
+  <span className="font-bold italic underline">SEO team</span>, where I learned invaluable SEO standards for <span className="font-bold italic underline">creating and designing web pages.</span>  
+  {" "}Then, I transitioned to backend development, and I am now currently working as a {" "}
+  <span className="font-bold italic underline"> full time backend developer</span> while also helping people with their ideas and execution.
+</p>
+
 
       <p>
-        <span className="italic">When I'm not coding</span>, I enjoy playing
-        video games, watching movies, and playing with my dog. I also enjoy{" "}
-        <span className="font-medium">learning new things</span>. I am currently
+        <span className="italic">When I'm not coding</span>,
+        I enjoy playing
+        basketball, chess and volleyball. I also have a keen interest 
+        in businesses and 
+        <span className="italic">creating solutiosn that help people and make an impact </span>
+        I am currently
         learning about{" "}
-        <span className="font-medium">history and philosophy</span>. I'm also
-        learning how to play the guitar.
+        <span className="font-medium">SaaS and startups</span>
       </p>
     </motion.section>
   );

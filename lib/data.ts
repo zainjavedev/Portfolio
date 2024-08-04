@@ -5,7 +5,12 @@ import { LuGraduationCap } from "react-icons/lu";
 import corpcommentImg from "@/public/corpcomment.png";
 import rmtdevImg from "@/public/rmtdev.png";
 import wordanalyticsImg from "@/public/wordanalytics.png";
-
+import khubImg from "@/public/khub.png";
+import medlegalImg from "@/public/medlegal.png";
+import ititansImg from "@/public/ititans.png";
+import { FaLaptopCode } from "react-icons/fa";
+import { FaPython } from "react-icons/fa"; 
+import { FaCode } from "react-icons/fa"; 
 export const links = [
   {
     name: "Home",
@@ -35,73 +40,75 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "Graduated bootcamp",
-    location: "Miami, FL",
+    title: "Web Scraper - Freelance",
+    location: "Remote",
     description:
-      "I graduated after 6 months of studying. I immediately found a job as a front-end developer.",
-    icon: React.createElement(LuGraduationCap),
-    date: "2019",
+      "I worked as a web scraper and data visualization with python and selenium helping people scrape data and provide insights so they can make better informed decisions.",
+    icon: React.createElement(FaLaptopCode),
+    date: "2020 - 2022",
   },
   {
-    title: "Front-End Developer",
-    location: "Orlando, FL",
+    title: "Full Stack Associate",
+    location: "Lahore, Pk",
     description:
-      "I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.",
-    icon: React.createElement(CgWorkAlt),
-    date: "2019 - 2021",
+      "I Worked as a full stack associate harenssing my development skills and creating websites for local and internation business while also maintainig the SEO standards. ",
+    icon: React.createElement(FaCode),
+    date: "2023 Jan - 2024 Dec",
   },
   {
-    title: "Full-Stack Developer",
-    location: "Houston, TX",
+    title: "Backend Developer",
+    location: "Lahore, Pk",
     description:
-      "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
-    icon: React.createElement(FaReact),
-    date: "2021 - present",
+      "I'm currently working as a backend developer working as a freelancer. My day to day tasks includes api development for new features, enhancement of legacy system, fixing bugs and vulnerabilities while maintaining clean code. ",
+    icon: React.createElement(FaPython),
+    date: "2024 Jan - present",
   },
 ] as const;
 
 export const projectsData = [
   {
-    title: "CorpComment",
+    title: "Medlegal SafeKeep",
     description:
-      "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
-    tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
-    imageUrl: corpcommentImg,
+      "A website for showcasing their mobile app, stunning webpages that are SEO optimized with language translation and formt to email setup.",
+    tags: ["HTML", "CSS", "Vanilla JS", "PHP"],
+    imageUrl: medlegalImg,
+    website:"https://medlegalsafekeep.com/"
   },
   {
-    title: "rmtDev",
+    title: "Kommerce-HUB",
     description:
-      "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
-    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
-    imageUrl: rmtdevImg,
+      "A warehouse management app that's a one stop for everything a warehouse owner needs with vast modules and scope.",
+    tags: ["Flask", "SQl", "Postgres", "Python", "SQL Alchemy"],
+    imageUrl: khubImg,
+    website:"https://khub.biz/"
   },
+ 
   {
-    title: "Word Analytics",
+    title: "iTitans",
     description:
-      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-    tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
-    imageUrl: wordanalyticsImg,
+      "An agency website filled with showcasing their services with multiple stepper forms and landing pages.",
+      tags: ["HTML", "CSS", "Vanilla JS", "PHP", "SEO", "on-page SEO", "Landing Pages"],
+    imageUrl: ititansImg,
+    website:"https://ititans.com/"
   },
 ] as const;
 
 export const skillsData = [
   "HTML",
   "CSS",
+  "Bootstrap",
   "JavaScript",
-  "TypeScript",
+  "Flask",
+  "SQL",
+  "SQLAlchemy",
   "React",
   "Next.js",
-  "Node.js",
   "Git",
   "Tailwind",
-  "Prisma",
-  "MongoDB",
-  "Redux",
-  "GraphQL",
-  "Apollo",
-  "Express",
   "PostgreSQL",
   "Python",
   "Django",
-  "Framer Motion",
+  "Celery",
+  "Selenium",
+  "BS4",
 ] as const;
