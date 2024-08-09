@@ -1,0 +1,38 @@
+name: 🚀 Deploy on push
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  web-deploy:
+    name: 🎉 Deploy
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 🚚 Get latest code
+        uses: actions/checkout@v2
+
+      - name: 📂 Install dependencies and build
+        run: |
+          npm install
+          npm run build
+          npm run export
+
+      - name: 📂 Sync built files to FTP
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+        with:
+          server: ftp.zaintech.dev
+          username: zainjaved@zaintech.dev
+          password: ${{ secrets.FTP_SECRET }}
+          local-dir: ./out   # 'out' directory is where Next.js exports the static site
+          server-dir: ititans.com/public_html/   # This is the target directory on the FTP server
+          exclude: |
+            **/.git**
+            **/node_modules**
+            **/src**
+            **/pages**
+            **/public**
+            **/next.config.js**
+            **/package.json**
